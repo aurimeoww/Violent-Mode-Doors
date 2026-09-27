@@ -39,13 +39,9 @@ queueEntity(180, 260, "https://raw.githubusercontent.com/FireGiraffe/Violent-Mod
 
 queueEntity(140, 200, "https://raw.githubusercontent.com/FireGiraffe/Violent-Mode-Doors/refs/heads/main/Paralyze.lua")
 
-queueEntity(220, 320, "https://raw.githubusercontent.com/FireGiraffe/Violent-Mode-Doors/refs/heads/main/Multimonster.lua")
-
 local MainGame = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
 MainGame.caption("Violent Mode V1.0 Activated", true)
 task.wait(2)
 MainGame.caption("Made by FireGiraffe, help from jack_thebritishfella and Rip_Silence", true)
 task.wait(2)
 MainGame.caption("Models by FireGiraffe, jack_thebritishfella, and rebound0193", true)
-task.wait(2)
-MainGame.caption("And for the multimonster on toolbox yes haha :3", true)
