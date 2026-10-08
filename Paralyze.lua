@@ -109,6 +109,16 @@ Paralyze:SetCallback("OnDespawned", function()
 		moveConnection:Disconnect()
 	end
 	print("[Paralyze] Paralyze despawned")
+		local DoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/AchievementHolder.lua"))()
+
+DoorsNotify({
+    Style = "ACHIEVEMENT",
+    Title = "Paralyzed",
+    Description = "It won't be the first time.",
+    Reason = "Survive Paralyze",
+    Image = "",
+    Time = 5
+})
 end)
 
 Paralyze:Run(true)
