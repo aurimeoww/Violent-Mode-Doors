@@ -109,6 +109,12 @@ Paralyze:SetCallback("OnDespawned", function()
 		moveConnection:Disconnect()
 	end
 	print("[Paralyze] Paralyze despawned")
+end)
+
+Paralyze:Run(true)
+
+print("[Paralyze] Paralyze has been summoned")
+
 		local DoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/AchievementHolder.lua"))()
 
 DoorsNotify({
@@ -119,8 +125,3 @@ DoorsNotify({
     Image = "",
     Time = 5
 })
-end)
-
-Paralyze:Run(true)
-
-print("[Paralyze] Paralyze has been summoned")
