@@ -102,4 +102,20 @@ local Thrash = Spawner:Create({
 	}
 })
 
+Thrash:SetCallback("OnDespawned", function()
+	if moveConnection then
+		moveConnection:Disconnect()
+	end
+		local DoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/AchievementHolder.lua"))()
+
+DoorsNotify({
+    Style = "ACHIEVEMENT",
+    Title = "Thrash",
+    Description = "Why did the lights turn red?",
+    Reason = "Survive Thrash.",
+    Image = "",
+    Time = 5
+})
+end)
+
 Thrash:Run(true)
