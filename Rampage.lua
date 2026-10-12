@@ -107,6 +107,17 @@ Rampage:SetCallback("OnDespawned", function()
 			end
 		end
 	end
+
+		local DoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/AchievementHolder.lua"))()
+
+DoorsNotify({
+    Style = "ACHIEVEMENT",
+    Title = "Rampage",
+    Description = "Survive Rampage.",
+    Reason = "",
+    Image = "",
+    Time = 5
+})
 end)
 
 Rampage:Run(true)
