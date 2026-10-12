@@ -19,7 +19,7 @@ task.wait(0.4)
 local Wail = Spawner:Create({
 	Entity = {
 		Name = "Wail",
-		Asset = "https://github.com/FireGiraffe/Violent-Mode-Doors/raw/main/Wail.rbxm", -- FIXED (raw link)
+		Asset = "https://github.com/FireGiraffe/Violent-Mode-Doors/raw/main/Wail.rbxm",
 		HeightOffset = 0
 	},
 	Movement = {
