@@ -76,8 +76,17 @@ local Wail = Spawner:Create({
 	}
 })
 
-Wail:SetCallback("OnSpawned", function()
-	print("[Violent Mode] Wail has spawned")
+Wail:SetCallback("OnDespawned", function()
+		local DoorsNotify = loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/AchievementHolder.lua"))()
+
+DoorsNotify({
+    Style = "ACHIEVEMENT",
+    Title = "Crying?",
+    Description = "Who crying bruh",
+    Reason = "Survive Wail.",
+    Image = "",
+    Time = 5
+})
 end)
 
 Wail:Run(true)
